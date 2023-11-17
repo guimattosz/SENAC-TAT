@@ -1,0 +1,20 @@
+1  sudo apt dist-upgrade
+    2  sudo apt autoremove
+    3  sudo apto upgrade
+    4  sudo apt upgrade
+    5  id
+    6  sudo
+    7  sudo -i
+    8  sudo apt full-upgrade
+    9  sudo apt upgrade
+   10  sudo apt update
+   11  sudo apt upgrade
+   12  a
+   13  sudo dpkg --configure -a
+   14  sudo apt update
+   15  sudo apt upgrade
+   16  sudo apt full-upgrade
+   17  sudo apt dist-upgrade
+   18  sudo apto autoclean
+   19  sudo apt autoclean
+   20  history
