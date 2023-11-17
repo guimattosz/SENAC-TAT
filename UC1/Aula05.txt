@@ -1,4 +1,4 @@
-1  sudo apt dist-upgrade
+    1  sudo apt dist-upgrade
     2  sudo apt autoremove
     3  sudo apto upgrade
     4  sudo apt upgrade
