@@ -1,0 +1,35 @@
+Comando Cat: Concatenar arquivos de texto e mostrar o conteúdo de arquivos de texto no terminal. 
+  Concatenar: Pegar o texto e juntá-lo ao conteúdo de um outro arquivo (Exp: Texto -> Texto2) 
+
+Terminal: Comando de ajuda: man cat 
+
+ls -l (Mostrar arquivos de texto) 
+
+cat [Nome do arquivo]:  
+  Visualizar conteúdo dentro de um arquivo com o Terminal. 
+
+cat –n [Nome do arquivo]: 
+  Visualizar conteúdo dentro de um arquivo com o Terminal, mas agora com as linhas numeradas. 
+
+cat –b [Nome do arquivo]: 
+  Visualizar conteúdo dentro de um arquivo com o Terminal, mas agora com as linhas numeradas pulando as linhas em branco. 
+
+ 
+Comando Head: Pegar as primeiras linhas de qualquer arquivo. 
+
+Terminal: Comando de ajuda: head --help 
+
+head /etc/services 
+
+head –n 20 /etc/services 
+  Visualizar as primeiras 20 linhas do arquivo. 
+
+
+Comando Tail: Irá mostrar as últimas linhas de um arquivo. 
+
+Terminal: Comando de ajuda: tail --help 
+
+tail /etc/services 
+
+tail –n 20 /etc/services 
+	Visualizar as últimas 20 linhas do arquivo. 
