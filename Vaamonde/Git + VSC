@@ -1,0 +1,35 @@
+Objetivo da aula de hoje: 05/12/2023 - (FINALIZAÇÃO)
+
+Primeira etapa: Iniciar a máquina virtual do Linux Mint
+
+Segunda etapa.: Se autenticar na máquina com o seu usuário
+
+Terceira etapa: Atualizar o sistema:
+				Você pode usar o: MintUpdate ou
+				Terminal (Atalho Ctrl + Alt + T)
+					sudo apt update
+					sudo apt upgrade
+					sudo apt full-upgrade
+					sudo apt dist-upgrade
+					sudo apt autoremove
+					sudo apt autoclean
+
+#01_ Instalar o VSCode
+#02_ Instalar a Extensao Spell PT-BR
+#03_ Clonar o seu Repositório do Github
+	 git clone https://github.com/vaamonde/senac-tat
+#04_ Organização do Repositório Local
+#05_ Configurar o Git Local
+	 git config --global user.name "Robson Vaamonde"
+	 git config --global user.email "seuemail@dot.com"
+	 git config --global core.editor vim
+	 git config --global merge.tool vimdiff
+	 git config --global color.ui true
+	 git config --list
+#06_ Integração do VSCode com  o Github
+	 git status
+	 git pull
+	 git add .
+	 git commit -m "Atualizacao"
+	 git status
+	 git push
