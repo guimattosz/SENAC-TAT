@@ -1,0 +1,49 @@
+/**
+  Controle de Vagas de Estacionamento
+  Leitura do Sensor ultrassonico HC-SR04
+  @author Guilherme Mattos
+  -----------------------
+  | Sensor  | Arduino   |
+  | Vcc     |   5V      |
+  | Trig    |   A5      |
+  | Echo    |   A4      |
+  | GND     |   GND     |
+  -----------------------
+*/
+
+//Variaveis usadas no calculo da distância.
+int distancia; // Distancia em cm (Obter valor em cm)
+long sensor; //Apoio ao calculo
+
+void setup() {
+  pinMode(4, OUTPUT); //Led Verde
+  pinMode(2, OUTPUT); //Led Vermelho
+  Serial.begin(9600); //Iniciar a comucanicação serial (Valor na tela)
+  pinMode(A4, INPUT); //Echo (Sensor) (Nessecário portas analógicas) <- Recebe o pulso sonoro
+  pinMode(A5, OUTPUT); //Trig (Sensor) -> Envia o pulso sonoro
+}
+
+void loop() {
+  distancia = ping(); //Executar a função ping
+  Serial.println(distancia);
+    if (distancia < 10) {
+    digitalWrite(2, HIGH);
+    digitalWrite(4, LOW);  
+ 
+  } else {
+    digitalWrite(4, HIGH);   
+    digitalWrite(2, LOW);    
+  }
+}
+
+//Função (Bloco de código reutilizavel)
+//Função usada pra disparar o pulso e calcular a distância
+long ping() { //Variavel de precisão que aceita casa decimais
+  digitalWrite(A5, LOW); //Desligar o Trig
+  delayMicroseconds(2); //Fabricante recomenda
+  digitalWrite(A5, HIGH); //Disparar o Pulso (Trig)
+  delayMicroseconds(10); //Fabricante recomenda
+  sensor = pulseIn(A4, HIGH); //Receber o pulso (Echo)
+  return (sensor / 29) / 2; //Calcular a distância em cm
+
+}

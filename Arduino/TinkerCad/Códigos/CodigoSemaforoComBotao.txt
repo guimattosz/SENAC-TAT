@@ -19,7 +19,7 @@ void setup(){
   	pinMode(13, INPUT_PULLUP); // Botão -> Input
 }
 
-	// Declarando ordem de ascender e apagar LEDs
+	// Declarando ordem de acender e apagar LEDs
 void loop(){
   	
  	Botao = digitalRead(13); // Declarando botão.
